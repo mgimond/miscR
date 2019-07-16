@@ -1,3 +1,5 @@
+# Use the sample shapefile_to_weighted_kernel_density.zip data files
+# with this script. Make sure to uncompress them into your R session folder
 library(spatstat)
 library(maptools)
 library(sf)

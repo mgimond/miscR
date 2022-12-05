@@ -44,7 +44,7 @@ geo_buf_equi <- function(x0 = 0, y0 = 45) {
 geo_buf <- function(p, radius = 5000, seg = 30){
   if( !("sf" %in% class(p)) ) stop('p is not an sf object.')
   if(is.null(st_crs(p, parameters = TRUE)$IsGeographic)) 
-    stop('p is not in a geographic coordinate system.')
+    stop('p does not have a defined coordinate system')
   if( !st_crs(p, parameters = TRUE)$IsGeographic)
     stop('p is not in a geographic coordinate system.')
   geo_circ <- p[0,]

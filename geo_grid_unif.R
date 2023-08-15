@@ -9,7 +9,7 @@
 
 
 geo_grid_unif <- function(n = 100, sf = FALSE){
-  coord1 <-  matrix(, nrow = n + 1 , ncol = 2)
+  coord1 <-  matrix(, nrow = n + 1000 , ncol = 2)
   a <- 4 * pi /n
   d <- sqrt(a)
   Mlat = round(pi / d)
